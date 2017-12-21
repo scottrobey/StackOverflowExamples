@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10d5d9e8-488d-4ffb-9c6c-e00403d0c661" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="/media/psf/Home/projects/StackOverflowExamples/.idea/workspace.xml" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/workspace.xml" />
     </list>
     <ignored path="/media/psf/Home/projects/StackOverflowExamples/.gradle/" />
     <ignored path="/media/psf/Home/projects/StackOverflowExamples/build/" />
@@ -575,7 +574,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513818263526</updated>
-      <workItem from="1513818264676" duration="1732000" />
+      <workItem from="1513818264676" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1513822919399</created>
@@ -593,7 +592,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1732000" />
+    <option name="totallyTimeSpent" value="1737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1003" extended-state="6" />
