@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10d5d9e8-488d-4ffb-9c6c-e00403d0c661" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/935056360/StackOverflowExamples_main.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/935056360/StackOverflowExamples_test.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/935056360/projects-StackOverflowExamples.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/compiler.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/gradle.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/libraries/Gradle__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/misc.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/modules.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/modules/935056360/StackOverflowExamples_main.iml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/modules/935056360/StackOverflowExamples_test.iml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/modules/935056360/projects-StackOverflowExamples.iml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/vcs.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/.idea/workspace.xml" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/build.gradle" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/gradle/wrapper/gradle-wrapper.jar" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/gradle/wrapper/gradle-wrapper.properties" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/gradlew" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/gradlew.bat" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/settings.gradle" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/src/main/java/org/robey/named_params/Person.java" />
-      <change beforePath="" afterPath="/media/psf/Home/projects/StackOverflowExamples/src/test/java/org/robey/named_params/PersonTest.java" />
     </list>
     <ignored path="/media/psf/Home/projects/StackOverflowExamples/.gradle/" />
     <ignored path="/media/psf/Home/projects/StackOverflowExamples/build/" />
@@ -66,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="false">
         <entry file="file:///media/psf/Home/projects/StackOverflowExamples/src/test/java/org/robey/named_params/PersonTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
@@ -74,6 +39,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -579,12 +554,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513818263526</updated>
-      <workItem from="1513818264676" duration="1667000" />
+      <workItem from="1513818264676" duration="1686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1667000" />
+    <option name="totallyTimeSpent" value="1686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1003" extended-state="6" />
@@ -597,7 +572,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -626,6 +601,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -646,6 +625,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
