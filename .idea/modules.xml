@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/935056360/StackOverflowExamples_main.iml" filepath="$PROJECT_DIR$/.idea/modules/935056360/StackOverflowExamples_main.iml" group="StackOverflowExamples" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/935056360/StackOverflowExamples_test.iml" filepath="$PROJECT_DIR$/.idea/modules/935056360/StackOverflowExamples_test.iml" group="StackOverflowExamples" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/935056360/projects-StackOverflowExamples.iml" filepath="$PROJECT_DIR$/.idea/modules/935056360/projects-StackOverflowExamples.iml" />
+    </modules>
+  </component>
+</project>
