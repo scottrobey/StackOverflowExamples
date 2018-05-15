@@ -1,5 +1,9 @@
 package org.robey.named_params;
 
+/**
+ * See: https://stackoverflow.com/questions/1988016/named-parameter-idiom-in-java/47916808#47916808 
+ *
+**/
 class Person {
     static class TypedContainer<T> {
         T val;
