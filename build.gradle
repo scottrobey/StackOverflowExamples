@@ -1,7 +1,10 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
 group 'org.robey'
 version '1.0-SNAPSHOT'
-
-apply plugin: 'java'
 
 java {
     toolchain {
@@ -9,12 +12,25 @@ java {
     }
 }
 
+application {
+    mainClass = 'org.robey.shutdown_hook_limit.App'
+}
+
+//jar {
+//    manifest {
+//        attributes(
+//                'Main-Class': 'org.robey.shutdown_hook_limit.App'
+//        )
+//    }
+//}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.code.gson:gson:2.11.0'
+
     implementation 'org.springframework.boot:spring-boot-starter-web:3.4.1'
 
     testImplementation group: 'junit', name: 'junit', version: '4.12'

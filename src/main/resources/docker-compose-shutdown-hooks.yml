@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  shutdownhook-test:
+    image: eclipse-temurin:17-jdk
+    container_name: shutdownhook
+    hostname: shutdownhook
+    volumes:
+      - ../../:/usr/src/app
+    working_dir: /usr/src/app
+    entrypoint: ["./resources/main/shutdownhook-app.sh"]
+    
+  pinger-app:
+    image: eclipse-temurin:17-jdk
+    container_name: pinger
+    volumes:
+      - ../../:/usr/src/app
+    working_dir: /usr/src/app
+    entrypoint: [ "./resources/main/curl-app.sh" ]
