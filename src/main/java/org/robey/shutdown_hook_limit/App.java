@@ -12,13 +12,18 @@ import static org.robey.utils.Log.logError;
 
 @SpringBootApplication
 @RestController // Combines @SpringBootApplication and @RestController in one class
-@RequestMapping("/api") // Base URL for the REST endpoints
+@RequestMapping("/api")
 public class App {
 
     public static void main(String[] args) {
         log(">>>>> ShutdownHookApp Starting Up >>>>>");
         try {
             SpringApplication.run(App.class, args);
+
+            final int NUMBER_OF_HOOKS = 1_000_000;
+            MyShutdownHook myShutdownHook = new MyShutdownHook();
+            myShutdownHook.register(NUMBER_OF_HOOKS);
+            log(" ** All Shutdown Hooks Have Been Registered, number: "  + NUMBER_OF_HOOKS);
         } catch (Throwable t) {
             logError("***** ShutdownHookApp Fatal Error", t);
         } finally {

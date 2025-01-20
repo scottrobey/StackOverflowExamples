@@ -8,6 +8,11 @@ services:
     volumes:
       - ../../:/usr/src/app
     working_dir: /usr/src/app
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 1G
     entrypoint: ["./resources/main/shutdownhook-app.sh"]
     
   pinger-app:
