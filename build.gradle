@@ -14,6 +14,17 @@ java {
 
 application {
     mainClass = 'org.robey.shutdown_hook_limit.App'
+
+    // simple JVM arg to log GC info to console
+    //applicationDefaultJvmArgs = ['-verbose:gc']
+
+    // Use Xlog framework to log GC details to a file that can be rotated
+    // Details: https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/tutorial-Xlog/html/index.html
+    //applicationDefaultJvmArgs = ['-Xlog:gc*,classhisto*=trace:file=/usr/src/app/gc.log:uptime,time,tags,level:filecount=1,filesize=4M']
+
+    // Use Xlog framework to log GC details to the console
+    applicationDefaultJvmArgs = ['-Xlog:gc=info:stdout:uptime,time,tags,level']
+
 }
 
 //jar {

@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   shutdownhook-test:
-    image: eclipse-temurin:17-jdk
+    image: eclipse-temurin:21-jdk
     container_name: shutdownhook
     hostname: shutdownhook
     volumes:
@@ -16,7 +16,7 @@ services:
     entrypoint: ["./resources/main/shutdownhook-app.sh"]
     
   pinger-app:
-    image: eclipse-temurin:17-jdk
+    image: eclipse-temurin:21-jdk
     container_name: pinger
     volumes:
       - ../../:/usr/src/app
