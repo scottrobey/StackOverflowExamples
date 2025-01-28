@@ -1,5 +1,6 @@
 package org.robey.shutdown_hook_limit;
 
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.robey.utils.Log.log;
@@ -20,4 +21,17 @@ public class MyShutdownHook {
             }));
         }
     }
+
+    public void registerOnce(Runnable hook) {
+        if( registered.compareAndSet(false, true) ) {
+            log("Registering shutdown hook: " + hook);
+            Runtime.getRuntime().addShutdownHook(new Thread(hook, "shutdown-hook-" + hook.getClass().getSimpleName()));
+        } else {
+            log("Already registered!");
+        }
+
+    }
+
+    private final AtomicBoolean registered = new AtomicBoolean(false);
+
 }
