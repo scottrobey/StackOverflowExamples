@@ -1,16 +1,48 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
 group 'org.robey'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
 
-sourceCompatibility = 1.11
+application {
+    mainClass = 'org.robey.shutdown_hook_limit.App'
+
+    // simple JVM arg to log GC info to console
+    //applicationDefaultJvmArgs = ['-verbose:gc']
+
+    // Use Xlog framework to log GC details to a file that can be rotated
+    // Details: https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/tutorial-Xlog/html/index.html
+    //applicationDefaultJvmArgs = ['-Xlog:gc*,classhisto*=trace:file=/usr/src/app/gc.log:uptime,time,tags,level:filecount=1,filesize=4M']
+
+    // Use Xlog framework to log GC details to the console
+    applicationDefaultJvmArgs = ['-Xlog:gc=info:stdout:uptime,time,tags,level']
+
+}
+
+//jar {
+//    manifest {
+//        attributes(
+//                'Main-Class': 'org.robey.shutdown_hook_limit.App'
+//        )
+//    }
+//}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.code.gson:gson:2.11.0'
 
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.4.1'
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
