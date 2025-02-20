@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  java-test:
+    # image: openjdk:7-jdk
+    # image: openjdk:8
+    image: openjdk:11
+    # image: openjdk:17
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+    volumes:
+      - .:/usr/data
+    working_dir: /usr/data
+#    entrypoint: ["tail", "-f", "/dev/null"]
+    entrypoint: "./entrypoint.sh"
