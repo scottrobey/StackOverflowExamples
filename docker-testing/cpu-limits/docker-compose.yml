@@ -2,10 +2,11 @@ version: '3.8'
 
 services:
   java-test:
-    # image: openjdk:7-jdk
-    # image: openjdk:8
-    image: openjdk:11
-    # image: openjdk:17
+    #image: openjdk:7-jdk
+    #image: openjdk:8
+    #image: openjdk:11
+    #image: openjdk:17
+    image: openjdk:latest
     deploy:
       resources:
         limits:
