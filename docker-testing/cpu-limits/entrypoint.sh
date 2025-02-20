@@ -1,6 +1,9 @@
 #!/bin/bash
+java -version
 
 javac Main.java
 java Main
 
-cat /sys/fs/cgroup/cpu.max
+echo "cgroup cpu.max: $(cat /sys/fs/cgroup/cpu.max)"
+
+echo "nproc: $(nproc)"
