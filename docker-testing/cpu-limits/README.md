@@ -6,9 +6,12 @@ Java 8 and earlier versions presumably, don't have support for Linux cgroups, so
 
 As I understand it, starting in Java 11 and later, the JDK has become container-aware and will respect cgroup CPU Limits.
 
+## Run Me
 You can run the test if you have Docker installed by simply running: `docker compose up`
 
 Edit the `docker-compose.yml` file to test different Java Docker images.
+
+## Test Results
 
 Here's the results of testing OpenJDK versions: 7, 8, 11, 17, and latest.
 
