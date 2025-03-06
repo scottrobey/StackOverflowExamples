@@ -6,6 +6,8 @@ Java 8 and earlier versions presumably, don't have support for Linux cgroups, so
 
 As I understand it, starting in Java 11 and later, the JDK has become container-aware and will respect cgroup CPU Limits.
 
+See: https://stackoverflow.com/questions/75233530/java-lang-runtime-getruntime-availableprocessors-difference-beween-java-8
+
 ## Run Me
 You can run the test if you have Docker installed by simply running: `docker compose up`
 
