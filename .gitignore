@@ -4,3 +4,6 @@ out/
 .idea/
 
 docker-testing/cpu-limits/Main.class
+
+test-data/
+
