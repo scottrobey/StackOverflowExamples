@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  stackoverflowexamples:
+    image: openjdk:latest
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 4G
+    volumes:
+      - .:/usr/data
+    environment:
+      # set specific test case here
+      TEST_CASE: "org.robey.compress_test.CompressorTests"
+      #TEST_CASE: "org.robey.filecopy_test.CopyFilesTest"
+    working_dir: /usr/data
+    entrypoint: "./entrypoint.sh"
