@@ -1,12 +1,8 @@
 version: '3.8'
-
+# Runs test on different openjdk image versions
 services:
-  java-test:
-    #image: openjdk:7-jdk
-    #image: openjdk:8
-    #image: openjdk:11
-    #image: openjdk:17
-    image: openjdk:latest
+  openjdk7:
+    image: openjdk:7-jdk
     deploy:
       resources:
         limits:
@@ -14,5 +10,61 @@ services:
     volumes:
       - .:/usr/data
     working_dir: /usr/data
-#    entrypoint: ["tail", "-f", "/dev/null"]
     entrypoint: "./entrypoint.sh"
+
+  openjdk8:
+    image: openjdk:8
+    depends_on:
+      openjdk7:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+    volumes:
+      - .:/usr/data
+    working_dir: /usr/data
+    entrypoint: "./entrypoint.sh"
+
+  openjdk11:
+    image: openjdk:11
+    depends_on:
+      openjdk8:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+    volumes:
+      - .:/usr/data
+    working_dir: /usr/data
+    entrypoint: "./entrypoint.sh"
+
+  openjdk17:
+    image: openjdk:17
+    depends_on:
+      openjdk11:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+    volumes:
+      - .:/usr/data
+    working_dir: /usr/data
+    entrypoint: "./entrypoint.sh"
+
+  openjdk-latest:
+    image: openjdk:latest
+    depends_on:
+      openjdk17:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+    volumes:
+      - .:/usr/data
+    working_dir: /usr/data
+    entrypoint: "./entrypoint.sh"
+#    entrypoint: ["tail", "-f", "/dev/null"]
