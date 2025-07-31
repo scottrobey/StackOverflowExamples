@@ -1,4 +1,4 @@
-# Testing CPU Limits in Different Versions of the Java
+# Testing CPU Limits in Different Versions of Java
 
 This project has a Main class and docker compose file to demonstrate the difference in behavior of the JVM when it comes to it's container awareness.
 
